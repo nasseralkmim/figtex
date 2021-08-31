@@ -1,6 +1,0 @@
-setup.cfg
-setup.py
-figtex.egg-info/PKG-INFO
-figtex.egg-info/SOURCES.txt
-figtex.egg-info/dependency_links.txt
-figtex.egg-info/top_level.txt
