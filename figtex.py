@@ -1,10 +1,11 @@
+import matplotlib.pyplot as plt
 import matplotlib as mpl
 
 def default():
-    mpl.style.use('default')
+    plt.style.use('default')
     return None
 
-def style(typeface='DejaVu Serif'):
+def style():
     """ Use custom config."""
     default()
     config = {
