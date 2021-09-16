@@ -7,7 +7,6 @@ def default():
 
 def style():
     """ Use custom config."""
-    default()
     config = {
         'text.usetex': True,    # use LaTeX to render text
         'font.family': 'serif',
