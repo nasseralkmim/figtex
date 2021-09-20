@@ -1,5 +1,4 @@
 import matplotlib.pyplot as plt
-import matplotlib as mpl
 
 def default():
     plt.style.use('default')
@@ -12,6 +11,6 @@ def style(serif='Computer Modern'):
         'font.family': 'serif',
         'font.serif': [serif]
     }
-    mpl.rcParams.update(config)
+    plt.rcParams.update(config)
     return None
 
