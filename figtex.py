@@ -6,10 +6,12 @@ def default():
 
 def style(serif='Computer Modern'):
     """ Use custom config."""
+    plt.style.use('seaborn-whitegrid')
     config = {
         'text.usetex': True,    # use LaTeX to render text
         'font.family': 'serif',
-        'font.serif': [serif]
+        'font.serif': [serif],
+        'figure.constrained_layout.use': True,
     }
     plt.rcParams.update(config)
     return None
