@@ -12,6 +12,8 @@ def style(serif='Computer Modern'):
         'font.family': 'serif',
         'font.serif': [serif],
         'figure.constrained_layout.use': True,
+        'legend.frameon': True,
+        'legend.edgecolor': 'none',
     }
     plt.rcParams.update(config)
     return None
