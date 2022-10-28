@@ -10,7 +10,7 @@ def default():
 
 def style(serif='Computer Modern'):
     """Set custom config."""
-    plt.style.use('seaborn-colorblind')
+    plt.style.use('seaborn-deep')
     config = {
         'text.usetex': True,    # use LaTeX to render text
         'font.family': 'serif',
@@ -32,6 +32,7 @@ def style(serif='Computer Modern'):
         'ytick.color': '0.15',
         'lines.linewidth': 1,   # default is 1.5
         'lines.markerfacecolor': "none",
+        'lines.markeredgewidth': 1,
         'text.latex.preamble': r"\usepackage{amsmath}", # allows \text in math env
     }
     plt.rcParams.update(config)
