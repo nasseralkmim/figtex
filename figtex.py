@@ -16,6 +16,7 @@ def style(serif='Computer Modern'):
         'font.family': 'serif',
         'font.serif': [serif],
         # 'figure.constrained_layout.use': True,
+        'figure.autolayout': True, # auto adjust subplots
         'legend.frameon': True,
         'legend.edgecolor': 'none',
         'legend.fontsize': 8,
