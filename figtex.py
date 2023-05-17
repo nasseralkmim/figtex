@@ -1,6 +1,9 @@
 """Nasser's default plot style."""
 import matplotlib.pyplot as plt
+import itertools
 
+markers = itertools.cycle((',', '+', '.', 'o', '*'))
+linestyles = itertools.cycle(('-', '--', '-.', ':'))
 
 def default():
     """Make it matplotlib's default."""
