@@ -31,9 +31,9 @@ def style(serif='Computer Modern'):
         'text.color': '0.15',
         'xtick.color': '0.15',
         'ytick.color': '0.15',
-        'lines.linewidth': 1,   # default is 1.5
+        'lines.linewidth': 0.5,   # default is 1.5
         'lines.markerfacecolor': "white",
-        'lines.markeredgewidth': 1,
+        'lines.markeredgewidth': 0.5,
         'text.latex.preamble': r"\usepackage{amsmath}", # allows \text in math env
     }
     plt.rcParams.update(config)
