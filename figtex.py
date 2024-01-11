@@ -16,7 +16,7 @@ def style(serif='Computer Modern'):
         'font.family': 'serif',
         'font.serif': [serif],
         # 'figure.constrained_layout.use': True,
-        'figure.autolayout': True, # auto adjust subplots
+        # 'figure.autolayout': True, # auto adjust subplots
         'legend.frameon': True,
         'legend.edgecolor': 'none',
         'legend.fontsize': 8,
@@ -32,7 +32,7 @@ def style(serif='Computer Modern'):
         'xtick.color': '0.15',
         'ytick.color': '0.15',
         'lines.linewidth': 1,   # default is 1.5
-        'lines.markerfacecolor': "none",
+        'lines.markerfacecolor': "white",
         'lines.markeredgewidth': 1,
         'text.latex.preamble': r"\usepackage{amsmath}", # allows \text in math env
     }
