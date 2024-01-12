@@ -13,7 +13,11 @@ def default():
 
 def style(serif='Computer Modern'):
     """Set custom config."""
-    plt.style.use('seaborn-deep')
+    try:
+        plt.style.use('seaborn-v0_8-deep')
+    except OSError:
+        # if matplotlib version does not have the style
+        pass
     config = {
         'text.usetex': True,    # use LaTeX to render text
         'font.family': 'serif',
