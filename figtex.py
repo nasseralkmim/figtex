@@ -29,6 +29,7 @@ def style(serif='Computer Modern'):
         'legend.fontsize': 8,
         'font.size': 10.0,
         'axes.grid': True,
+        'axes.axisbelow': True,
         'axes.linewidth': 0.5,    # seaborn changed to a ticker, better 1 or 0.5
         'grid.linewidth': 0.5,
         'xtick.major.width': 0.5,
