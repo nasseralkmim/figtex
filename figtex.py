@@ -38,7 +38,9 @@ def style(serif='Computer Modern'):
         'grid.color': '0.8',
         'text.color': '0.15',
         'xtick.color': '0.15',
+        'xtick.direction': 'in',
         'ytick.color': '0.15',
+        'ytick.direction': 'in',
         'lines.linewidth': 0.5,   # default is 1.5
         'lines.markerfacecolor': "white",
         'lines.markeredgewidth': 0.5,
