@@ -2,7 +2,7 @@
 import matplotlib.pyplot as plt
 import itertools
 
-markers = itertools.cycle((',', '+', '.', 'o', '*'))
+markers = itertools.cycle(('o', 'P', 's', 'X', '^', 'x'))
 linestyles = itertools.cycle(('-', '--', '-.', ':'))
 
 def default():
@@ -34,15 +34,11 @@ def style(serif='Computer Modern'):
         'grid.linewidth': 0.5,
         'xtick.major.width': 0.5,
         'ytick.major.width': 0.5,
-        'axes.edgecolor': '0.0',
-        'grid.color': '0.8',
-        'text.color': '0.15',
-        'xtick.color': '0.15',
+        'grid.alpha': '0.5',
         'xtick.direction': 'in',
-        'ytick.color': '0.15',
         'ytick.direction': 'in',
         'lines.linewidth': 0.5,   # default is 1.5
-        'lines.markerfacecolor': "white",
+        # 'lines.markerfacecolor': "white",
         'lines.markeredgewidth': 0.5,
         'text.latex.preamble': r"\usepackage{amsmath}", # allows \text in math env
     }
