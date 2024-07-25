@@ -27,6 +27,7 @@ def style(serif='Computer Modern'):
         'legend.frameon': True,
         'legend.edgecolor': 'none',
         'legend.fontsize': 8,
+        'legend.framealpha': .3,
         'font.size': 10.0,
         'axes.grid': True,
         'axes.axisbelow': True,
@@ -40,8 +41,7 @@ def style(serif='Computer Modern'):
         'lines.linewidth': 0.5,   # default is 1.5
         # 'lines.markerfacecolor': "white",
         'lines.markeredgewidth': 0.5,
-        'text.latex.preamble': r"\usepackage{amsmath}", # allows \text in math env
+        'text.latex.preamble': r"\usepackage{amsmath}",  # allows \text in math env
     }
     plt.rcParams.update(config)
     return None
-
