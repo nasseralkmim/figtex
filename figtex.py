@@ -14,15 +14,16 @@ def default():
 def style(serif='Computer Modern'):
     """Set custom config."""
     try:
-        plt.style.use('seaborn-v0_8-deep')
+        plt.style.use('fivethirtyeight')
     except OSError:
         # if matplotlib version does not have the style
         pass
     config = {
-        'text.usetex': True,    # use LaTeX to render text
-        'font.family': 'serif',
-        'font.serif': [serif],
+        # 'text.usetex': True,    # use LaTeX to render text
+        # 'font.family': 'serif',
+        # 'font.serif': [serif],
         # 'figure.constrained_layout.use': True,
+        'svg.fonttype': 'none',
         # 'figure.autolayout': True, # auto adjust subplots
         'legend.frameon': True,
         'legend.edgecolor': 'none',
