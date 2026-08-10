@@ -32,13 +32,21 @@ def style(serif='Computer Modern'):
         'font.size': 10.0,
         'axes.grid': True,
         'axes.axisbelow': True,
-        'axes.linewidth': 0.5,    # seaborn changed to a ticker, better 1 or 0.5
+        # frame: fivethirtyeight paints the spines the same color as the
+        # background, so set an explicit edge color to make them show up.
+        # Same gray as the grid, so the frame reads as part of it
+        'axes.edgecolor': '0.78',
+        'axes.linewidth': 0.5,
+        # grid: keep the contrast in the color, not in the alpha, so it does
+        # not depend on whatever is drawn behind it
+        'grid.color': '0.78',
+        'grid.alpha': 1.0,
         'grid.linewidth': 0.5,
-        'xtick.major.width': 0.5,
-        'ytick.major.width': 0.5,
-        'grid.alpha': '0.5',
-        'xtick.direction': 'in',
-        'ytick.direction': 'in',
+        # no tick marks, only the frame and the labels
+        'xtick.major.size': 0,
+        'ytick.major.size': 0,
+        'xtick.minor.size': 0,
+        'ytick.minor.size': 0,
         'lines.linewidth': 0.5,   # default is 1.5
         # 'lines.markerfacecolor': "white",
         'lines.markeredgewidth': 0.5,
